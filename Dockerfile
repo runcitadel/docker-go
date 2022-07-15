@@ -37,8 +37,8 @@ RUN set -eux; \
 		's390x') \
 			export GOARCH='s390x' GOOS='linux'; \
 			;; \
-		'riscv') \
-			export GOARCH='riscv' GOOS='linux'; \
+		'riscv64') \
+			export GOARCH='riscv64' GOOS='linux'; \
 			;; \
 		*) echo >&2 "error: unsupported architecture '$arch' (likely packaging update needed)"; exit 1 ;; \
 	esac; \
